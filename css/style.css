@@ -1,9 +1,8 @@
 :root{
-    --title-volor: #60be3e;
-    --text-color:#fff;
-    --link-color: background: #34e89e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;    
+    --heading-color: #562A7E;
+    --title-color: #640fb4;
+    --text-color:#483CB4;
+    --link-color: #45a437;
 }
 
 /* Font-family */
@@ -44,7 +43,9 @@ body {
     font-size: 16px;
     line-height: 36px;
     letter-spacing: 0.15px;
-    background-color: #000;
+    background-color: background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
     color: var(--text-color);
     overflow-x: hidden;
 }
@@ -55,7 +56,7 @@ body {
     }
 
   *:focus {
-    outline: 2px dashed var(--active-color);
+    outline: 2px dashed var(--title-volor);
     outline-offset: 3px;
     }
 
@@ -83,9 +84,67 @@ body {
 }
 
 .header__info{
+    padding-top: 20px;
     display: flex;
 }
 
 .header-title {
-    color: var(--title-volor);
+    color: var(--heading-color);
+    margin-left: 20px;
 }
+
+
+/* HERO */
+.hero {
+    padding-top: 30px;
+    margin-left: 700px;
+}
+
+.hero__title{
+    color: var(--title-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero__info {
+    border: 3px dashed #24326B    ;
+    display: flex;
+    border-radius: 10px;
+    width: 500px;
+    height: 260px;
+}
+
+.hero__img {
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.hero__box{
+    margin-left: 60px;
+}
+
+.hero__text-question{
+    color: red;
+    opacity: 0.6;
+}
+
+.hero__text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #45a437;
+}
+
+.hero__link {
+    text-decoration: none;
+    color: #45a437;
+    transition: border 0.1s ease ;
+}
+
+.hero__link:hover{
+    border-bottom: 2px solid #004e92;
+}
+
+.hero__link:active{
+    color: red;
+}
+
