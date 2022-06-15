@@ -9,62 +9,75 @@
 <!-- styles -->
 <link rel="stylesheet" href="/css/normalize.css">
 <link rel="stylesheet" href="/css/style.css">
-<!-- fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@1,700&display=swap" rel="stylesheet">
 <body>
     
-    <header class="header">
+    <!-- SITE-HEADER -->
+    <div class="header">
         <div class="container">
-            <div class="header__info">
-                <img class="header__img" src="/img/blogger.png" alt="coder" width="60" height="60">
-            <h1 class="header-title">PORTFOLIO</h1>
+            <div class="header__heading-box">
+                <img class="header__img-heading" src="/img/blogger.png" alt="blogger" width="80" height="50">
+                <h1 class="heaader__heading">_Portfolio</h1>
             </div>
-        </div>
-    </header>
 
-    <div class="hero">
-        <div class="container">
-            <div class="hero__info">
-                <div class="hero__box">
-                <h2 class="hero__title">O'zim haqimda</h2>
-                <span class="hero__text-question">Ism:</span>
-                <span class="hero__text hero__text-color">Muhlisa</span> <br>
-                <span class="hero__text-question">Familya:</span> 
-                <span class="hero__text hero__text-color">Sharofiddinova</span> <br>
-                <span class="hero__text-question">Github profil:</span>
-                <span class="hero__text hero__text-color"><a class="hero__link" href="https://github.com/webdev20071995">github</a></span> <br>
-                <span class="hero__text-question">Telefon raqam:</span>
-                <span class="hero__text hero__text-color">+998 91 126-85-03</span> <br>
-                <span class="hero__text-question">Instagram profil:</span>
-                <span class="hero__text hero__text-color"><a class="hero__link" href="https://www.instagram.com/frontend_tester/">Mukhlisa</a></span> <br>
-                </div>
-                <div class="hero__img-wrapper"><img class="hero__img" src="/img/mukhlisa.jpg" alt="rasm" width="130" height="100"></div>
+            <div class="header__info">
+                <div class="header__img-box"><img class="header__img" src="/img/mukhlisa.jpg" alt="portret" width="200" height="200"></div>
+                <div class="header__info-box">
+                    <h1 class="header__title">O'zim haqimda</h1>
+                <span class="header__text">Ism: Muhlisa</span><br>
+                <span class="header__text">Familya: Sharofiddinova</span> <br>
+                <span class="header__text">Github: <a class="header__link" href="https://github.com/webdev20071995"><strong>git.hub</strong></a></span> <br>
+                <span class="header__text">Telefon raqami: 91 126-85-03</span> <br>
+                <span class="header__text">instagram profili: <a class="header__link" href="https://www.instagram.com/frontend_tester/"><strong>coder_0718</strong></a></span>
+                </div>  
             </div>
         </div>
     </div>
 
-
-    <div class="main">
-        <div class="container">
-            <div class="main__inner">
-                <h2 class="main__title">Loyihalar</h2>
-                <div class="main__info">
-                    <div class="main__wrapper">
-                    <a class="main__link" href=""><h3 class="hero__text">easybank</h3></a>
-                    <p class="main__text">loyiha tuzilgan: 06.06.2022</p>
-                    <p class="main__text">github: <a class="main__link" href="#">easybank</a>
-                    netlify: <a class="main__link" href="#">easybank</a>
-                    </p>
-                    <p class="main__info-text">Loyiha xaqida: Bu loyiha asosan moliyaviy hayotni onlan qilish uchun tuzilgan.
-                        Qolaversa easybank dasturi ham mavjud bo'lib siz u bilan istagan joyingizda moliyaviy ahvolingizni kuzatib borishda yordam beradi. 
-                    </p>
+    <main class="main__contant">
+        
+        <!-- HERO -->
+        <div class="hero">
+            <div class="container">
+                <h2 class="hero__heading">Loyihalar</h2>
+                <div class="border">
+                <div class="hero__info">
+                    <div class="hero__info-title">
+                        <a class="hero__link-img" href="#"><img class="hero__img" src="/img/logo-easy.svg" alt="logo" width="100" height="100"></a>
+                        <h3 class="hero__title">Easybank</h3>
                     </div>
-                    <a class="main__link" href=""><img class="main__img" src="" alt=""></a>
+                    <ul class="hero__list">
+                        <li class="hero__item"><a class="hero__link" href="">github</a></li>
+                        <li class="hero__item"><a class="hero__link" href="">Netlify</a></li> 
+                    </ul>
                 </div>
+                <button class="hero__button"><a class="hero__link-color" href="/page/easybank.html">batafsil</a></button>
+            </div>
+
+                <div class="border">
+                <div class="hero__info">
+                    <div class="hero__info-title">
+                        <a class="hero__link-img" href="#"><img class="hero__img" src="/img/logo-book.svg" alt="logo" width="100" height="100"></a>
+                        <h3 class="hero__title">Bookmark</h3>
+                    </div>
+                    <ul class="hero__list">
+                        <li class="hero__item"><a class="hero__link" href="">github</a></li>
+                        <li class="hero__item"><a class="hero__link" href="">Netlify</a></li> 
+                    </ul>
+                </div>
+                <button class="hero__button"><a class="hero__link-color" href="/page/bookmark.html">batafsil</a></button>
+            </div>
             </div>
         </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+    <div class="footer__info">
+        <div class="container">            
+        <b class="footer__text">email: </b><a class="footer__link" href="@sharofiddinovamGmail.com">SharofiddinovaMuhlisa</a>
+    </div>
+    </div>
     </div>
 </body>
 </html>
