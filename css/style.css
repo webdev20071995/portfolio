@@ -1,6 +1,6 @@
 :root{
-    --title-color: brown;
-    --text-color: #222;
+    --title-color: rgb(187, 11, 11);
+    --text-color: rgb(15, 13, 13);
 }
 
 /* GLOBAL */
@@ -36,10 +36,10 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
     height: auto;
     }
 
-  *:focus {
-    outline: 1px solid var(--title-color);
-    outline-offset: 2px;
-    }
+  /* *:focus {
+    outline: 2px dashed #019bb6;
+    outline-offset: 3px;
+    } */
 
 
   /* CONTAINER  */
@@ -111,11 +111,37 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
     margin-right: 20px;
 }
 
+.hero__container{
+    position: relative;
+}
+
+.header__left-img{
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin-left: 100px;
+}
 
 /* HERO */
+.box:not(:last-child){
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+
+.box{
+    display: flex;
+}
+
 .hero {
     padding-top: 100px;
     margin-bottom: 30px;
+}
+
+.hero__link-icon{
+    text-decoration: none;
+    color: gray;
+    font-weight: 700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .hero__link-img{
@@ -125,7 +151,8 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 .border{
     margin-top: 90px;
     border: 2px solid #000;
-    width: 310px;
+    width: 360px;
+    height: 170px;
     border-radius: 10px;
     box-shadow: 0px 55px 50px rgba(0, 0, 0, 0.044);
 }
@@ -140,8 +167,12 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 .hero__title {
     font-size: 20px;
     font-weight: 900;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-top: 25px;
+}
+
+.hero__title-size{
+    margin-left: 10px;
 }
 
 .hero__info {
@@ -155,7 +186,7 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 }
 
 .hero__item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .hero__link {
@@ -165,21 +196,21 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 }
 
 .hero__link:hover{
-    opacity: 0.8;
     border-bottom: 2px solid #000;
 }
 
 .hero__button{
-    margin-left: 85px;
+    margin-left: 100px;
     margin-bottom: 10px;
     width: 100px;
     background-color: #000;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 9px;
     text-align: center;
 }
 
 .hero__link-color {
+    /* margin-left: 20px; */
     text-decoration: none;
     color: #fff;
 }
@@ -209,4 +240,8 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 .footer__link {
     color: green;
     text-decoration: none;
+}
+
+.hero__flex-img{
+    display: flex;
 }

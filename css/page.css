@@ -1,5 +1,5 @@
 :root{
-    --title-color: brown;
+    --title-color: rgb(187, 11, 11);
     --text-color: #222;
 }
 
@@ -34,7 +34,7 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
     }
 
   *:focus {
-    outline: 2px dashed var(--title-color);
+    outline: 2px dashed #019bb6;
     outline-offset: 2px;
     }
 
@@ -72,4 +72,18 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 
 .header__strong{
     color: rebeccapurple;
+}
+
+.header__link{
+    margin-left: 600px;
+    font-size: 18px;
+    font-weight: 500;
+    height: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(233, 134, 5);
+    color: rgb(3, 32, 192);
+}
+
+.header__link:hover{
+    opacity: 0.8;
 }
