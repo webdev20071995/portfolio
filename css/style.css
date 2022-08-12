@@ -119,6 +119,8 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
     border: 1px solid #222;
     border-radius: 10px;
     margin-left: 100px;
+    width: 630px;
+    height: 280px;
 }
 
 /* HERO */
