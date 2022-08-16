@@ -57,7 +57,7 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 }
 
 /* BUTTON */
-.button{
+.button {
     display: block;
     border: 0;
     padding: 10px 6px;
@@ -75,6 +75,15 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
     width: 100px;
 
 }
+
+.button:hover{
+    opacity: 0.8;
+}
+
+.button:active{
+    opacity: 0.6;
+}
+
 
 /* HEADER */
 .header__heading-box {
@@ -102,24 +111,26 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 }
 
 .header__title {
-    color: var(--title-color);
+    color: rgb(9, 9, 228);
     font-size: 24px;
     line-height: 20px;
     text-transform: uppercase;
 }
 
 .header__text {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
     color: var(--text-color);
 }
 
 .header__link{
     text-decoration: none;
-    color: var(--title-color);
-    transition: border-bottom 0.1s ease;
+    color: rgb(9, 9, 228);
 }
 
 .header__link:hover{
-    border-bottom: 2px solid var(--title-color);
+    border-bottom: 3px solid  rgb(9, 9, 228);
 }
 
 .header__link:active{
@@ -127,7 +138,7 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 }
 
 .header__img {
-    border-radius: 40%;
+    border-radius: 15%;
     margin-right: 20px;
 }
 
@@ -136,15 +147,21 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 }
 
 .header__left-img{
-    border: 1px solid #222;
+    border: 1px solid transparent;
     border-radius: 10px;
-    margin-left: 100px;
     width: 630px;
     height: 280px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.hero__left-img-link{
+    margin-left: 100px;
 }
 
 .box-start{
     align-items: flex-start;
+    align-items: start;
 }
 
 /* HERO */
@@ -158,6 +175,7 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 }
 
 .hero {
+    align-items: flex-start;
     padding-top: 100px;
     margin-bottom: 30px;
 }
@@ -175,7 +193,7 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 }
 
 .border{
-    margin-top: 90px;
+    margin-top: 60px;
     border: 2px solid #000;
     width: 360px;
     height: 170px;
@@ -185,6 +203,11 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
 
 .border-n{
     width: 390px;
+}
+
+.border-size{
+    width: 380px;
+    height: 177px;
 }
 
 .hero__heading{
@@ -199,7 +222,7 @@ background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, F
     line-height: normal;
     font-weight: 900;
     margin-left: 30px;
-    margin-top: 25px;
+    margin-top: 30px;
     color:  rgb(13, 89, 177);
 }
 
